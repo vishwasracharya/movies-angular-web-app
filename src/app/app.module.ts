@@ -10,6 +10,9 @@ import { AddComponent } from './components/movies/add/add.component';
 import { EditComponent } from './components/movies/edit/edit.component';
 import { MovieComponent } from './components/movies/movie/movie.component';
 import { RentComponent } from './components/movies/rent/rent.component';
+import { ListUsersComponent } from './components/account/list-users/list-users.component';
+import { ProfileComponent } from './components/account/profile/profile.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { RentComponent } from './components/movies/rent/rent.component';
     AddComponent,
     EditComponent,
     MovieComponent,
-    RentComponent
+    RentComponent,
+    ListUsersComponent,
+    ProfileComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

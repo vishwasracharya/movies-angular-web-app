@@ -1,0 +1,63 @@
+<section class="my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-9 mx-auto">
+        <h1 class="text-center mb-5">All Users</h1>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col" class="text-center">#</th>
+              <th scope="col" class="text-center">First Name</th>
+              <th scope="col" class="text-center">Last Name</th>
+              <th scope="col" class="text-center">Email</th>
+              <th scope="col" class="text-center">Created At</th>
+              <th scope="col" class="text-center">Movies Rented</th>
+              <th scope="col" class="text-center">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="text-center">index+1</th>
+              <td class="text-center">user.firstName</td>
+              <td class="text-center">user.lastName</td>
+              <td class="text-center">user.email</td>
+              <td class="text-center">
+                user.created_at.toString().split("G")[0]
+              </td>
+              <td class="text-center">user.movies.length</td>
+              <td class="text-center">
+                <button
+                  id="user._id"
+                  class="btn btn-danger rounded border-0 shadow lh-1"
+                >
+                  Delete
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 mx-auto">
+        <h1 class="text-center mb-5">No Users Available</h1>
+        <div class="d-flex justify-content-center align-items-center">
+          <img
+            loading="eager"
+            class="img-fluid"
+            src="/images/profile.png"
+            width="200"
+            height="200"
+            alt="Profile Image"
+            alt="Profile Image"
+            title="Profile Image"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

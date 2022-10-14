@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ListUsersComponent } from './components/account/list-users/list-users.component';
+import { ProfileComponent } from './components/account/profile/profile.component';
+import { HomeComponent } from './components/home/home.component';
 import { AddComponent as AddMovie } from './components/movies/add/add.component';
 import { EditComponent } from './components/movies/edit/edit.component';
 import { MovieComponent } from './components/movies/movie/movie.component';
@@ -9,12 +12,15 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'signin', component: SignInComponent },
   { path: 'signup', component: SignUpComponent },
   { path: 'add-movie', component: AddMovie },
   { path: 'edit-movie/:id', component: EditComponent },
   { path: 'movie/:id', component: MovieComponent },
   { path: 'movie/rent/:id', component: RentComponent },
+  { path: 'account/:id', component: ProfileComponent },
+  { path: 'account/all-users', component: ListUsersComponent },
 ];
 
 @NgModule({
