@@ -8,6 +8,8 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { AddComponent } from './components/movies/add/add.component';
 import { EditComponent } from './components/movies/edit/edit.component';
+import { MovieComponent } from './components/movies/movie/movie.component';
+import { RentComponent } from './components/movies/rent/rent.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { EditComponent } from './components/movies/edit/edit.component';
     SignInComponent,
     SignUpComponent,
     AddComponent,
-    EditComponent
+    EditComponent,
+    MovieComponent,
+    RentComponent
   ],
   imports: [
     BrowserModule,
