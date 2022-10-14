@@ -4,7 +4,7 @@
       <h1 class="text-center mb-5">Movies</h1>
       <div class="row">
         <div class="col-12 col-md-6 col-lg-3 mb-4 mx-auto mx-md-0">
-          <a href="/movies/movie._id" class="text-decoration-none">
+          <a routerLink="/movies/movie._id" class="text-decoration-none">
             <div class="border-0 rounded-15 card-hover-img">
               <div class="p-1 d-flex align-items-center justify-content-center">
                 <img
@@ -18,7 +18,7 @@
                 <h5 class="text-dark">movie.title</h5>
                 <p class="desc fs-smaller text-dark">movie.description</p>
                 <a
-                  href="site_url/movies/movie._id"
+                  routerLink="/movies/movie._id"
                   class="btn btn-primary rounded border-0 shadow lh-1"
                   >View</a
                 >
@@ -45,7 +45,9 @@
             alt="Logo"
             title="Logo"
           />
-          <a href="/movies/add" class="mb-3 btn btn-dark lh-1 shadow border-0"
+          <a
+            routerLink="/add-movie"
+            class="mb-3 btn btn-dark lh-1 shadow border-0"
             >Go To Add Movie</a
           >
         </div>
