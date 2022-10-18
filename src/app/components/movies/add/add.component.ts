@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-add',
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add.component.css'],
 })
 export class AddComponent implements OnInit {
-  constructor() {}
+  constructor(private title: Title) {
+    this.title.setTitle('Add Movie');
+  }
 
   ngOnInit(): void {}
 }
