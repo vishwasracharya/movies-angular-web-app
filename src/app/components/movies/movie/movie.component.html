@@ -2,26 +2,26 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-3 mx-auto mb-3 mb-md-0">
-        <img class="img-fluid rounded-15 shadow" src="" alt="" title="" />
+        <img class="img-fluid rounded-15 shadow" src="{{movie.image}}" alt="{{movie.title}}" title="{{movie.title}}" />
       </div>
       <div class="col-12 col-md-9 mx-auto mb-3 mb-md-0">
-        <h1 class="text-dark">movie.title</h1>
+        <h1 class="text-dark">{{movie.title}}</h1>
         <div class="mb-2">
-          <img src="/images/star.png" width="24" height="24" alt="" />
+          <img src="assets/images/star.png" width="24" height="24" alt="{{movie.title}}" />
         </div>
-        <p class="fs-6 text-muted mb-2"><strong>Genre:</strong> movie.genre</p>
+        <p class="fs-6 text-muted mb-2"><strong>Genre:</strong> {{movie.genre}}</p>
         <p class="fs-6 text-muted mb-2">
-          <strong>Director:</strong> movie.director
+          <strong>Director:</strong> {{movie.director}}
         </p>
-        <p class="fs-6 text-muted mb-2"><strong>Year:</strong> movie.year</p>
-        <p class="text-muted">movie.description</p>
+        <p class="fs-6 text-muted mb-2"><strong>Year:</strong> {{movie.year}}</p>
+        <p class="text-muted">{{movie.description}}</p>
         <a
-          routerLink="/movies/edit/movie._id"
+          routerLink="/movie/edit/{{movie._id}}"
           class="btn btn-primary rounded border-0 shadow lh-1 me-1"
           >Edit</a
         >
         <a
-          routerLink="/movies/rent/movie._id"
+          routerLink="/movie/rent/{{movie._id}}"
           class="btn btn-dark rounded border-0 shadow lh-1 me-1"
           >Rent</a
         >
