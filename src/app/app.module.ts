@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
@@ -13,6 +15,8 @@ import { RentComponent } from './components/movies/rent/rent.component';
 import { ListUsersComponent } from './components/account/list-users/list-users.component';
 import { ProfileComponent } from './components/account/profile/profile.component';
 import { HomeComponent } from './components/home/home.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { MovieCardComponent } from './components/home/movie-card/movie-card.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +30,14 @@ import { HomeComponent } from './components/home/home.component';
     RentComponent,
     ListUsersComponent,
     ProfileComponent,
-    HomeComponent
+    HomeComponent,
+    PageNotFoundComponent,
+    MovieCardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

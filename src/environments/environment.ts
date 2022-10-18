@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  authToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzE5OTA1MWExNmU0NDViNTk1NWRjMTYiLCJmaXJzdE5hbWUiOiJWaXNod2FzIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjY2MDg0NjU0fQ.PChQx-Bm0H3FnBQkPL7TdWgjBOvQ6MemPPXHV7m7WRs',
+  apiUrl: 'https://movies-node-web-app.herokuapp.com/',
 };
 
 /*

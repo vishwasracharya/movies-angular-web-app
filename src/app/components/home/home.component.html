@@ -1,35 +1,21 @@
 <div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h1 class="text-center mb-5">Movies</h1>
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-3 mb-4 mx-auto mx-md-0">
-          <a routerLink="/movies/movie._id" class="text-decoration-none">
-            <div class="border-0 rounded-15 card-hover-img">
-              <div class="p-1 d-flex align-items-center justify-content-center">
-                <img
-                  src="movie.image"
-                  class="img-fluid rounded-15 movie-img"
-                  alt="movie.title"
-                  title="movie.title"
-                />
-              </div>
-              <div class="p-3">
-                <h5 class="text-dark">movie.title</h5>
-                <p class="desc fs-smaller text-dark">movie.description</p>
-                <a
-                  routerLink="/movies/movie._id"
-                  class="btn btn-primary rounded border-0 shadow lh-1"
-                  >View</a
-                >
-              </div>
-            </div>
-          </a>
+  <!-- if movies length is greater than 0 then show components otherwise don't show -->
+  <!-- <div *ngIf="movies.length > 0"> -->
+  <div *ngIf="isMovieAvailable">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center mb-5">Movies</h1>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 mb-4 mx-auto mx-md-0" *ngFor="let movie of movies">
+            <app-movie-card [movie]="movie"></app-movie-card>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container">
+
+  <!-- if movies length is 0 then show this -->
+  <div *ngIf="!isMovieAvailable">
     <div class="row">
       <div class="col-12 col-md-5 mx-auto text-center">
         <h1>No Movies Available</h1>
@@ -39,7 +25,7 @@
           <img
             loading="eager"
             class="mb-3"
-            src="/images/logo.png"
+            src="assets/images/logo.png"
             width="200"
             height="200"
             alt="Logo"
