@@ -15,6 +15,7 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'signin', component: SignInComponent },
+  // { path: 'signin', loadChildren: () => import('./components/sign-in/sign-in.component').then(m => m.SignInComponent) },
   { path: 'signup', component: SignUpComponent },
   { path: 'add-movie', component: AddMovie },
   { path: 'movie/:id', component: MovieComponent },

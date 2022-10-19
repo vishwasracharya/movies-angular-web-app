@@ -1,7 +1,7 @@
 <div class="container">
   <!-- if movies length is greater than 0 then show components otherwise don't show -->
   <!-- <div *ngIf="movies.length > 0"> -->
-  <div *ngIf="isMovieAvailable">
+  <div *ngIf="isMovieAvailable; else elseBlock">
     <div class="row">
       <div class="col-12">
         <h1 class="text-center mb-5">Movies</h1>
@@ -15,7 +15,7 @@
   </div>
 
   <!-- if movies length is 0 then show this -->
-  <div *ngIf="!isMovieAvailable">
+  <ng-template #elseBlock>
     <div class="row">
       <div class="col-12 col-md-5 mx-auto text-center">
         <h1>No Movies Available</h1>
@@ -39,5 +39,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </ng-template>
 </div>
