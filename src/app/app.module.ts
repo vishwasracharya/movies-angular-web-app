@@ -17,6 +17,8 @@ import { ProfileComponent } from './components/account/profile/profile.component
 import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { MovieCardComponent } from './components/home/movie-card/movie-card.component';
+import { AccessDeniedComponent } from './_shared/components/access-denied/access-denied.component';
+import { AccountComponent } from './account/account.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { MovieCardComponent } from './components/home/movie-card/movie-card.comp
     ProfileComponent,
     HomeComponent,
     PageNotFoundComponent,
-    MovieCardComponent
+    MovieCardComponent,
+    AccessDeniedComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
