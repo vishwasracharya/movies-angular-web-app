@@ -11,7 +11,7 @@
         />
       </div>
       <div class="col-12 col-md-8 mx-auto mb-3 mb-md-0">
-        <form action="/api/edit-movie/" method="POST">
+        <!-- <form> -->
           <div class="form-group mb-3">
             <div class="row">
               <div class="col-12 col-md-6 mb-3 mb-md-0">
@@ -138,10 +138,11 @@
           <button
             type="submit"
             class="btn btn-warning rounded border-0 shadow lh-1"
+            (click)="editMovie($event)"
           >
             Update
           </button>
-        </form>
+        <!-- </form> -->
       </div>
     </div>
   </div>

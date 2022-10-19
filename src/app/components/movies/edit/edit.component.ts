@@ -12,7 +12,9 @@ const API_BASE_URL = environment.apiUrl;
 })
 export class EditComponent implements OnInit {
   movie: any;
-
+  editMovie(event: any) {
+    console.log(event);
+  }
   constructor(
     private route: ActivatedRoute,
     private httpClient: HttpClient
