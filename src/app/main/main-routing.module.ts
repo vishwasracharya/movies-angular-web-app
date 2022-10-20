@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from '../components/home/home.component';
 import { MainComponent } from './main.component';
 
 const routes: Routes = [
@@ -9,8 +10,8 @@ const routes: Routes = [
     canActivate: [],
     children: [
       {
-        path: 'main',
-        component: MainComponent,
+        path: '',
+        component: HomeComponent,
       }
     ],
   },

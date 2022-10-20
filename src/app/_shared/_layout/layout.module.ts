@@ -4,8 +4,8 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 @NgModule({
-  declarations: [],
-  imports: [],
-  exports: [],
+  declarations: [LayoutComponent],
+  imports: [CommonModule],
+  exports: [LayoutComponent],
 })
 export class LayoutModule {}
