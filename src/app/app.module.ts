@@ -12,13 +12,11 @@ import { AddComponent } from './components/movies/add/add.component';
 import { EditComponent } from './components/movies/edit/edit.component';
 import { MovieComponent } from './components/movies/movie/movie.component';
 import { RentComponent } from './components/movies/rent/rent.component';
-import { ListUsersComponent } from './components/account/list-users/list-users.component';
-import { ProfileComponent } from './components/account/profile/profile.component';
 import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { MovieCardComponent } from './components/home/movie-card/movie-card.component';
 import { AccessDeniedComponent } from './_shared/components/access-denied/access-denied.component';
-import { AccountComponent } from './account/account.component';
+// import { AccountComponent } from './account/account.component';
 
 @NgModule({
   declarations: [
@@ -30,13 +28,10 @@ import { AccountComponent } from './account/account.component';
     EditComponent,
     MovieComponent,
     RentComponent,
-    ListUsersComponent,
-    ProfileComponent,
     HomeComponent,
     PageNotFoundComponent,
     MovieCardComponent,
     AccessDeniedComponent,
-    AccountComponent
   ],
   imports: [
     BrowserModule,

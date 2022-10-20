@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccountComponent } from './account.component';
+import { ListUsersComponent } from './list-users/list-users.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {
@@ -8,31 +10,25 @@ const routes: Routes = [
     component: AccountComponent,
     canActivate: [],
     children: [
-    //   {
-    //     path: '',
-    //     redirectTo: 'login',
-    //     pathMatch: 'full'
-    //   },
-    //   {
-    //     path: 'login',
-    //     component: LoginComponent,
-    //     data: {returnUrl: window.location.pathname}
-    //   },
-    //   {
-    //     path: 'reset-password',
-    //     component: ResetPasswordComponent
-    //   },
-    //   {
-    //     path: 'forgot-password',
-    //     component: ForgotPasswordComponent
-    //   },      
-    //   { path: '', redirectTo: 'login', pathMatch: 'full' },
-    ]
-  }
+      {
+        path: '',
+        redirectTo: 'profile',
+        pathMatch: 'full',
+      },
+      {
+        path: 'users',
+        component: ListUsersComponent,
+      },
+      {
+        path: 'profile',
+        component: ProfileComponent
+      },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AccountRoutingModule { }
+export class AccountRoutingModule {}
